@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORCE | Cursos del Periodo 20182</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="cuerpo">
+    <div class="contenedor">
+        <nav class="nav navbar-default">
+            <ul class="navbar-brand">
+                <p><span class="glyphicon glyphicon-menu-hamburger" title="Toggle Navigation" data-placement="right"
+                        data-toggle="tooltip" id="triple"></span></p>
+            </ul>
+            <ul class="navbar-brand" id="letras">INTRANET <span>ALUMNOS</span></ul>
+            <ul class="navbar-brand glyphicon glyphicon-bell" id="campana"></ul>
+            <!--<div class="dropdown navbar-right">Bryan Arrivasplata<span class="caret"></span></div>-->
+            <ul class="navbar-header pull-right" id="menu-pequeño">
+                <p class="dropdown" data-toggle="dropdown">Bryan Arrivasplata <span class="caret"></span></p>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+                <ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <ul class="menu">
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+            <li>
+                <a href="#"><span class="glyphicon glyphicon-user"></span> Ficha de Usuario <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='#'><span>Datos Personales</span></a></li>
+                    <li><a href='#'><span>Cambio de Clave</span></a></li>
+                    <li><a href='#'><span>Vincular Facebook</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Informacion Academica <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='#'><span>Avance Curricular</span></a></li>
+                    <li><a href='#'><span>Ficha Academica</span></a></li>
+                    <li><a href='#'><span>Ficha Academica Depurada</span></a></li>
+                    <li><a href='#'><span>Hoja de no Adeudo</span></a></li>
+                    <li><a href='#'><span>Rendimiento por Periodo</span></a></li>
+                    <li><a href='#'><span>Matricula y Horario</span></a></li>
+                    <li><a href='#'><span>Reporte de Asistencia</span></a></li>
+                    <li><a href='#'><span>Mis Notas a la Fecha</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> Mis Tramites <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='#'><span>Carné Universitario</span></a></li>
+                </ul>
+            </li>
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion </a></li>
+        </ul>
+    </div>
+    <div class="descripcion">
+        <div>
+            <div class="col-lg-12 col-md-12">
+                <div>
+                    <header>
+                        <ul>
+                            <li><a class="unico"><span class="glyphicon glyphicon-home"></span> Alumno </a> / Datos
+                                Personales</li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-6 col-md-6 boster">
+                    <div class="col-lg-12 col-md-12">
+                        <ul class="tercera-pre">
+                            <li class="tercera-header">Datos Generales<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="inferior">
+                            <form class="form-horizontal">
+                                <!--Esto ara que el formulario sea dos columnas una fila-->
+                                <div class="form-group">
+                                    <label class="col-sm-2">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="ARRIVASPLATA-ROJAS-BRYAN DANIELL"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Facultad</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="INGENIERIA INDUSTRIAL Y DE SISTEMAS"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Código UNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="20172657B" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">E-Mail UNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">E-Mail Alternativo</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="bryan_bdar14@hotmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">DNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="70174828">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4">Fecha de Nacimiento</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" value="1999-15-02">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Sexo</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control">
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul>
+                                <li><a class="boton1"><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="boton2"><span class="glyphicon glyphicon-print"></span>Imprimir esta
+                                        ficha</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 boster">
+                    <!--comenzaremos aca-->
+                    <div class="col-lg-12 col-md-12 medida">
+                        <ul class="tercera-pre">
+                            <li class="tercera-header">Datos Generales<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 mayor"><!--corregir aqui-->
+                        <div class="alertas">
+                            <ul>
+                                <li class="rojo"><strong>Atención:</strong>Si no vizualiza su DNI cargado recientemente
+                                    presione<strong> Ctrl + F5</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="azul"><strong>Atención:</strong>Cargue las imágenes de ambas caras del DNI
+                                    vigente. Solo se permite archivos jpg/jpeg con peso menor a 500Kb
+                                    SE DESCARTARA LA IMAGEN MAL ESCANEADA. LA IMAGEN NO DEBE TENER ESPACIOS SOBRANTES.
+                                    Luego de subir la imagen podrá recortarla.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="col-lg-2 col-md-2">
+                                    <li>Imagen<br>Delantera</li>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <img src="http://www.academico.uni.edu.pe/intranet/public/_alumno/dni/0c27137bfb2d945e672d4ae5be8b4036.jpg"
+                                        class="img-responsive" alt="Responsive image">
+                                    <li><a><span class="glyphicon glyphicon-trash"></span>Borrar</a></li>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="col-lg-2 col-md-2">
+                                    <li>Imagen<br>Posterior</li>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <img src="http://www.academico.uni.edu.pe/intranet/public/_alumno/dni/0c27137bfb2d945e672d4ae5be8b4036-2.jpg"
+                                        class="img-responsive" alt="Responsive image">
+                                    <li><a><span class="glyphicon glyphicon-trash"></span>Borrar</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">Lugar de Nacimiento<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-4">Pais</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Perú</option>
+                                        <option>Venezuela</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-4">Departamento</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Cajamarca</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-4">Provincia</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Cañete</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-4">Distrito</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Miraflores</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">Domicilio<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-2 col-md-2">
+                            <div class="form-group">
+                                <label class="col-sm-12">Dirección</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima, 1">
+                                    <p class="text-center">Av. / Jr. / Calle / Psje.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="1406">
+                                    <p class="text-center">N° / Int.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima">
+                                    <p class="text-center">Mz. / lote / Urb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-2">Departamento</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Provincia</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Distrito</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-1">Telefono</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" value="4235796">
+                            </div>
+                            <label class="col-sm-1">Celular</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" value="980501414">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">Educacion Secundaria<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-1">Tipo</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Estatal</option>
+                                    <option>Particular</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-2">Nombre del Colegio</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" value="86239 NUESTRA SEÑORA DE GUADALUPE">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-2">Departamento</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Provincia</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Distrito</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">Laboral<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="opciones1" value="opciones1">Menos de
+                                    S/. 1,000
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="opciones11" value="opciones1">Entre
+                                    S/. 1,000 y S/. 3,000
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="opciones12" value="opciones1">Mayor de
+                                    S/. 3,000
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios1" id="opciones2" value="opciones2">Trabaja
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios1" id="opciones21" value="opciones2" checked>No
+                                    Trabaja
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios1" id="opciones22" value="opciones6">Practicante
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios2" id="opciones3" value="opciones3">Carrera
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios2" id="opciones31" value="opciones3" checked>Otros
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-1">Ocupacion</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option>Ingeneria</option>
+                                    <option>Automotriz</option>
+                                    <option>Autos</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">DATOS DEL PADRE O APODERADO<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" value="Rojas">
+                                    <p class="text-center">Apellido Paterno</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" value="Mayta">
+                                    <p class="text-center">Apellido Materno</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <input type="text" class="form-control" value="Ketty">
+                                    <p class="text-center">Nombres</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-1">Parentesco:</label>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2">Padre
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2"
+                                            checked>Madre
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2">Hermano(a)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2">Otro
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <div>
+                                        <input type="text" class="form-control" value="" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-2">Telefono Fijo:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" value="980501414">
+                            </div>
+                            <label class="col-sm-1">Celular:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" value="980501414">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-2 col-md-2">
+                            <div class="form-group">
+                                <label class="col-sm-12">Dirección actual del padre o apoderado:</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima, 1">
+                                    <p class="text-center">Av. / Jr. / Calle / Psje.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="1406">
+                                    <p class="text-center">N° / Int.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima">
+                                    <p class="text-center">Mz. / lote / Urb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <label class="col-sm-2">Departamento</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Provincia</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1">Distrito</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="div-referencia">
+                <!--divreferencia-->
+                <div class="col-lg-12 col-md-12">
+                    <ul class="tercera-pre">
+                        <li class="tercera-header">REFERENCIA<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="selector col-lg-12 col-md-12">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <p class="text-center">Apellidos y nombres</p><input type="text" class="form-control"
+                                        value="Rojas Mayta Ketty"><br><input type="text" class="form-control" value="Arrivasplata Rodas Juan Martin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <p class="text-center">Parentesco</p><input type="text" class="form-control" value="Madre"><br><input
+                                        type="text" class="form-control" value="Padre">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <div>
+                                    <p class="text-center">Teléfono</p><input type="text" class="form-control" value="980501414"><br><input
+                                        type="text" class="form-control" value="964301756">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selector col-lg-12 col-md-12 parte-abajo">
+                        <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                    </div>
+                </div>
+            </div>
+            <!--cerrar referencia-->
+            <!--jersson-->
+            <div class="col-lg-12 " style="margin-top: 15px;">
+                <div class="col-lg-12 bg-white" style="
+                background-color: white;
+                border-bottom-style: solid;
+                border-bottom-width: 0.5px;
+                border-color: #cccccc;
+                background: #fff;
+                margin-top: 15px;
+                border-bottom: 1px solid #f0f0f8 !important;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                padding-right: 20px;
+                font-weight: 300;
+            ">
+                REFERENCIA
+                    <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="true" aria-controls="collapseExample" style="    border: none;
+                                background-color: transparent!important;
+                                color: #797979;">
+                        <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                    </button></div>
+            </div>
+
+
+            <div class="collapse in" id="collapseExample" aria-expanded="true" >
+                <div class="">
+                    <div class="col-lg-12 col-md-12 ocultar" style="">
+                        <div class="selector col-lg-12 col-md-12 ocultar" style="">
+                            <div class="col-lg-4 col-md-4 ocultar" style="">
+                                <div class="form-group ocultar" style="">
+                                    <div class="ocultar" style="">
+                                        <p class="text-center">Apellidos y nombres</p><input type="text" class="form-control"
+                                            value="Rojas Mayta Ketty"><br><input type="text" class="form-control" value="Arrivasplata Rodas Juan Martin">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 ocultar" style="">
+                                <div class="form-group ocultar" style="">
+                                    <div class="ocultar" style="">
+                                        <p class="text-center">Parentesco</p><input type="text" class="form-control"
+                                            value="Madre"><br><input type="text" class="form-control" value="Padre">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 ocultar" style="">
+                                <div class="form-group ocultar" style="">
+                                    <div class="ocultar" style="">
+                                        <p class="text-center">Teléfono</p><input type="text" class="form-control"
+                                            value="980501414"><br><input type="text" class="form-control" value="964301756">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector col-lg-12 col-md-12 parte-abajo ocultar" style="">
+                            <li><a><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin jersson-->
+        </div>
+        <div class="col-lg-12 col-md-12 complet" style="margin-top: 15px;">
+            <li class="texto text-center">2014 © ORCE<span class="glyphicon glyphicon-chevron-up pull-right"></span></li>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
+<!--<a><span class="glyphicon glyphicon-home"> Inicio </span></a><br>#FF6C60
+                        <a><span class="glyphicon glyphicon-user"> Ficha de Usuario </span></a><br>
+                        <a><span class="glyphicon glyphicon-briefcase"> Informacion Academica </span></a><br>
+                        <a><span class="glyphicon glyphicon-folder-open"> Mis tramites </span></a><br>
+                        <a><span class="glyphicon glyphicon-log-out"> Cerrar Sesion </span></a>-->

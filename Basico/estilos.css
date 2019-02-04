@@ -1,0 +1,246 @@
+*{
+    margin:0px;
+    padding:0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.cuerpo{
+    color:#797979;
+    background:#f1f2f7;
+}
+.contenedor{
+    z-index:1;
+    position:fixed;
+    left: 0;
+    right: 0;
+}
+.contenedor nav ul p span#triple{
+    cursor:pointer;
+    font-size:17px;
+    display:inline-block;
+    margin-top:10px;
+
+}
+.contenedor nav ul#letras{
+    font-size:21px;
+    color:#2e2e2e;
+    cursor:pointer;
+    display:inline-block;
+    padding-top:10px;
+    padding-left:0px;
+    padding-top:23px;
+}
+.contenedor nav ul#letras span{
+    color:#FF6C60;
+    display:inline-block;
+}
+.contenedor nav ul#campana{
+    cursor:pointer;
+    display:inline-block;
+    font-size:18px;
+    position:fixed;
+    margin-top:15px;
+    border:1px solid #f0f0f8 !important;
+    margin-left:40px;
+    padding:2px 4px;
+    height:29px;
+    padding-top:4px;
+}
+.contenedor nav ul p.dropdown{
+    color:#666666;
+    cursor:pointer;
+    display:inline-block;
+    top:15px;
+    border:1px solid #f0f0f8 !important;
+    padding:2px 4px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:2px;
+}
+.contenedor nav ul ul.dropdown-menu{
+    top:58px;
+}
+.sidebar{
+    position:fixed;/*Posicion fija*/
+    top:61px;
+    width:240px;
+    height:100%;
+    background:#2a3542;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li{
+    padding:5px 10px;
+    list-style:none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color:#aeb2b7;
+    padding:10px 10px;
+    display:block;/*muy importante para verse mejor*/
+}
+.sidebar ul li:hover{
+    background:#324152;
+    color:#fff;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+}
+.sidebar ul li a:hover span{
+    color:#FF6C60;
+}
+.sidebar ul li ul{
+    display:none;
+}
+.sidebar ul li.activado {
+    background:#324152;
+}
+.sidebar ul li.activado span.glyphicon{
+    color:#FF6C60;
+}
+.descripcion{
+    margin-left:240px;
+    position:absolute;
+    top:70px;
+}
+.descripcion div div.part1{
+    background:#fff;
+}
+.descripcion div div ul li{
+    list-style:none;
+}
+.descripcion div div.part1 ul{
+    border-top:1px solid #e9e9f0 !important;
+    padding-left:15px;
+}
+.descripcion div div ul.principio{
+    cursor:pointer;
+    margin-bottom:0px;
+}
+.descripcion div div ul.principio a {
+    text-decoration: none;
+    color:black;
+}
+.descripcion div div ul.principio:hover{
+    background:#f1eded;
+}
+.descripcion div div.part2{
+    background:#fff;
+    height:180px;
+}
+.descripcion div div.part2 img.central{
+    position:absolute;
+    width:280px;
+    height:120px;
+}
+.descripcion div div.part2 div{
+    position:relative;
+}
+.descripcion div div.part2 div img{
+    border:2px solid #f0f0f8 !important;
+    float:left;
+    margin:10px;
+    cursor:pointer;
+}
+.descripcion div div.part2 div div.dentro{
+    top:10px;
+    font-size:18px;
+}
+.descripcion div div.part2 div div a{
+    color:white;
+    cursor:pointer;
+}
+.descripcion div div.part2 div h5{
+    color:white;
+}
+.descripcion div div.part2 div ul.botones li a {
+    border:1px solid rgba(0, 0, 0, .12);
+    background:#ebedf0;
+    text-decoration: none;
+    cursor:pointer;
+    text-align:none;
+    color:black;
+}
+.descripcion div div.part2 div ul.botones li {
+    position:absolute;
+}
+.descripcion div div.part2 div ul.botones li.uno {
+    margin-top: 0px;
+    margin-left: 0px;
+    left:7px;
+    top:90px;
+}
+.descripcion div div.part2 div ul.botones li.dos {
+    margin-top: 0px;
+    margin-left: 0px;
+    left:163px;
+    top:90px;
+}
+.descripcion div div.part3{
+    background:#fff;
+}
+.descripcion div div.part3 ul{
+    border-top:1px solid #e9e9f0 !important;
+    padding-left:15px;
+}
+.descripcion div div.part3 ul li h4 small a {
+    text-decoration:none;
+    cursor:pointer;
+}
+.descripcion div div.part3 ul li h4 small a:hover {
+    color:#2a8ad3;
+}
+.descripcion div div.part3 ul li h4 small span{
+    cursor:pointer;
+    right:10px;
+}
+.final{
+    margin-left:0px;
+}
+.final div div ul li{
+    list-style:none;
+    margin-bottom:20px;
+    padding-top:10px;
+    padding-left:10px;
+    font-size:13px;
+    font-family:'Open Sans', sans-serif;
+}
+.final div div ul li.celeste{
+    background:#d9edf7;
+    color:#3a87ad;
+}
+.final div div ul li.rojo{
+    background:#f2dede;
+    color:#b94a48;
+}
+.final div div ul li a{
+    text-decoration:none;
+    cursor:pointer;
+}
+.final div div ul li a:hover{
+    color:black;
+}
+.final div.superior div ul.pequeño li{
+    height:45px;
+}
+.final div.superior div ul.pequeño-grande li{
+    height:80px;
+}
+.final div.inferior div ul.grande li{
+    height:85px;
+}
+.final div.inferior div ul.grande-grande li{
+    height:65px;
+}
+.corregido{
+    margin-left:0px;
+}
+.final div{
+    top:20px;
+}
